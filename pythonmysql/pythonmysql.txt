@@ -1,0 +1,26 @@
+mysql database in python
+===========================
+One of the most popular databases is MySQL.
+1) import mysql.connector module 
+
+2)creating the connection
+ ======================
+To create the connection between the mysql database and the python application,the connect()the method of mysql.connector module is used.
+and then use the username and passwd from your MySQL database. 
+
+example
+========
+import mysql.connector
+name=mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="Siva@2662",
+    database="sivaram"
+)
+print(name)
+
+
+2) creating a cursor object
+============================
+The cursor obect can be defined as a abstraction in the python .we can create the cursor obect by calling the 'cursor' function of the connection object. the cursor object ia an important aspect of executing to the databases.
+create the one database to have to mention the "CREATE DATABASE"
